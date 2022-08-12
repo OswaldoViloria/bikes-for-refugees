@@ -63,6 +63,7 @@ p {
 .navigation__list {
   display: flex;
   list-style: none;
+
 }
 
 .navigation__item {
@@ -74,8 +75,10 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  margin: 10px;
+  padding: 10px ;
+  border: 1px solid transparent;
 }
-
 
 /* Text styles */
 
@@ -95,8 +98,21 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
-
+ .donate {
+  padding: 0.4em;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: #c05326;
+  color: #e4e4e4;
+}
+ button{
+  padding: 0.4em;
+  margin-left:0.2em;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color:#e4e4e4;
+  color:#c05326;
+}
 
 /* Content */
 
@@ -120,8 +136,11 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  color: white;
+  padding: 3rem;
+  height: 40%;
 }
 
 .hero h1 {
@@ -139,6 +158,7 @@ p {
 
 .heading-underline {
   position: relative;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--orange-light);
@@ -162,16 +182,37 @@ p {
 /* Article */
 
 .article {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
   margin-bottom: 1rem;
+  border: 2px solid var(--orange-light);
+  border-radius: 0.5vw;
+  justify-content: space-evenly;
+}
+.article-2 {
+  display: flex;
+  flex-direction:row;
+  padding: 1rem;
+  margin-top:0.5rem;
+  border: 2px solid var(--orange-light);
+  border-radius: 0.5vw;
+}
+.border-article{
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
 }
 
 .article__title {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: 700;
+  
 }
 
 .article__title-link {
+  text-align: end;
   text-decoration: none;
   color: var(--orange-dark);
 }
@@ -182,8 +223,9 @@ p {
 }
 
 .article__thumbnail {
+  justify-content: flex-start;
   object-fit: contain;
-  width: 5rem;
+  width: 6.5rem;
 }
 
 .article__read-more {
@@ -209,6 +251,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: end;
 }
 
 /* Sidebar */
@@ -222,7 +265,7 @@ p {
 /* Footer */
 
 .footer {
-  margin-top: 2rem;
+  margin-top: 7rem;
 }
 
 .footer__content {
